@@ -260,3 +260,161 @@
 //    reverseWord += word[i];
 //}
 //Console.WriteLine(reverseWord);
+
+
+
+//03/05/2025 mesqele
+
+
+
+
+//16  ededin ancaq 1e ve ozune bolunub bolunmediyini yoxlayan alqoritim
+
+
+
+//17 arrayda 6 ya bolunnenneri ekrana cixarsin
+
+//int[] givenArray = [23, 60, 12, 43, 56, 100, 23, 43, 21, 36, 72];
+//for (int i = 0; i < givenArray.Length; i++)
+//{
+//    if (givenArray[i] % 6 == 0)
+//    {
+//        Console.WriteLine(givenArray[i]);
+//    }
+//}
+
+
+////18 calculator
+//Console.WriteLine("enter formula you want (+, -, *, /, %, ^):");
+//char selectedFormula = ' ';
+//int power = 0;
+//double firstNum = 0;
+//double secondNum = 0;
+//char formula = Convert.ToChar(Console.ReadLine());
+//while (true)
+//{
+//    switch (formula)
+//    {
+//        case '+':
+//            Console.WriteLine(formula + " selected.");
+//            Console.WriteLine("please enter first number:");
+//            firstNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("please enter second number:");
+//            secondNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("answer is: " + (firstNum + secondNum));
+//            break;
+//        case '-':
+//            Console.WriteLine(formula + " selected.");
+//            Console.WriteLine("please enter first number:");
+//            firstNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("please enter second number:");
+//            secondNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("answer is: " + (firstNum - secondNum));
+//            break;
+//        case '*':
+//            Console.WriteLine(formula + " selected.");
+//            Console.WriteLine("please enter first number:");
+//            firstNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("please enter second number:");
+//            secondNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("answer is: " + (firstNum * secondNum));
+//            break;
+//        case '/':
+//            Console.WriteLine(formula +" selected.");
+//            Console.WriteLine("please enter first number:");
+//            firstNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("please enter second number:");
+//            secondNum = Convert.ToInt32(Console.ReadLine());
+//            if (secondNum == 0)
+//            {
+//                Console.WriteLine("you cant divide 0");
+//                break;
+//            }
+//            Console.WriteLine("answer is: " + (firstNum / secondNum));
+//            break;
+//        case '%':
+//            Console.WriteLine(formula + " selected.");
+//            Console.WriteLine("please enter first number:");
+//            firstNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("please enter second number:");
+//            secondNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("answer is: " + (firstNum % secondNum));
+//            break;
+//        case '^':
+//            Console.WriteLine(formula + " selected.");
+//            Console.WriteLine("please enter number:");
+//            firstNum = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("please enter power number:");
+//            power = Convert.ToInt32(Console.ReadLine());
+//            Console.WriteLine("answer is: " + Math.Pow(firstNum, power));
+//            formula = ' ';
+//            break;
+//        default:
+//            Console.WriteLine("error, wrong formula selected, please try again!");
+//            break;
+//    }
+//}
+
+////19 endirim
+//double[] prices = [100.0,1300.50,259.99,430.30,160.99,320.9];
+//for(int i=0; i < prices.Length; i++)
+//{
+//    prices[i] = prices[i] * .8;
+//}
+//for (int i=0;i < prices.Length; i++)
+//{
+//    Console.Write(prices[i]+" ");
+//}
+
+//22 oyun 1-100 arasinda cehd tapsa you won tapmasa game over
+//Random rnd = new Random();
+//int randomNumber = rnd.Next(1, 101);
+//Console.WriteLine(randomNumber);
+//int gameState = 0;
+//for (int i = 0; i < 5; i++)
+//{
+//    Console.WriteLine($"Guess the number between 1-100 , you have {5-i} attempts left :");
+//    int guess = Convert.ToInt32(Console.ReadLine());
+//    if (guess==randomNumber)
+//    {
+//        Console.WriteLine("You Won");
+//        gameState = 1;
+//        break;
+//    }
+//    else if(guess != randomNumber && i!=4)
+//    {
+//        Console.WriteLine("Try again");
+//        gameState = 0;
+//    }
+//    else
+//    {
+//        gameState = 0;
+//        break;
+//    }
+//}
+//if (gameState == 0)
+//{
+//    Console.WriteLine("Game Over");
+//}
+// 24 pelindrone check stringle
+//string input = Console.ReadLine();
+//if (input[input.Length - 1] == input[0]){
+//    Console.WriteLine("the number is pelindrone");
+//}
+//else{
+//    Console.WriteLine("the number isn't pelindrone");
+//}
+
+//24 pelindrone stringsiz
+//var input = Console.ReadLine();
+//if (input[0] == input[input.Length - 1])
+//{
+//    Console.WriteLine("the number is pelindrone");
+//}
+//else
+//{
+//    Console.WriteLine("the number isn't pelindrone");
+//}
+
+//24 real palindron
+int input = Convert.ToInt32(Console.ReadLine());
