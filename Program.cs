@@ -1,186 +1,262 @@
-﻿// 1) iki ededin boyuyunu tapan alqoritim, ededler console readline den gelecek
+﻿//// 1) iki ededin boyuyunu tapan alqoritim, ededler console readline den gelecek
+//Console.WriteLine("birinci ededi daxil edin:");
+//int firstNumber = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("ikinci ededi daxil edin:");
+//int secondNumber = Convert.ToInt32(Console.ReadLine());
+//if (firstNumber > secondNumber)
+//{
+//    Console.WriteLine("daxil edilen ededlerden boyuk olan eded:" + firstNumber);
+//}
+//else if (secondNumber > firstNumber) { Console.WriteLine("daxil edilen ededlerden boyuk olan eded:" + secondNumber); }
+//else
+//{
+//    Console.WriteLine("ededler beraberdir");
+//}
 
-Console.WriteLine("birinci ededi daxil edin:");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("ikinci ededi daxil edin:");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
-if (firstNumber > secondNumber)
-{
-    Console.WriteLine("daxil edilen ededlerden boyuk olan eded:" + firstNumber);
-}
-else if (secondNumber > firstNumber) { Console.WriteLine("daxil edilen ededlerden boyuk olan eded:" + secondNumber); }
-else
-{
-    Console.WriteLine("ededler beraberdir");
-}
+//// 2) verilen ededin 2e qaliqsiz bolunub bolunmediyini yoxlayan alqoritim yazaq readline ile
+//Console.WriteLine("2 ye qaliqsiz bolunub bolunmediyini yoxlamaq istediyiniz ededi daxil edin");
+//if (Convert.ToInt32(Console.ReadLine()) % 2 == 0)
+//{
+//    Console.WriteLine("daxil edilen reqem 2 ye qaliqsiz bolunur");
+//}
+//else
+//{
+//    Console.WriteLine("daxil edilen reqem 2 ye qaliqsiz bolunmur");
+//}
 
-// 2) verilen ededin 2e qaliqsiz bolunub bolunmediyini yoxlayan alqoritim yazaq readline ile
+//// 3) consoldan daxil edilen reqemin 100 den boyuk beraber boyukl mesaji kicikdirse kicik mesaji cixsin
+//if (Convert.ToInt32(Console.ReadLine()) >= 100)
+//{
+//    Console.WriteLine("boyuk");
+//}
+//else { Console.WriteLine("kicik"); }
 
-Console.WriteLine("2 ye qaliqsiz bolunub bolunmediyini yoxlamaq istediyiniz ededi daxil edin");
-if (Convert.ToInt32(Console.ReadLine()) % 2 == 0)
-{
-    Console.WriteLine("daxil edilen reqem 2 ye qaliqsiz bolunur");
-}
-else
-{
-    Console.WriteLine("daxil edilen reqem 2 ye qaliqsiz bolunmur");
-}
+//// 4) konsoldan daxil edilen yasin 18 den boyuk adult kicikdirse child yazan alqoritm
+//int age = Convert.ToInt32(Console.ReadLine());
+//if (age >= 18)
+//{
+//    Console.WriteLine("Adult");
+//}
+//else { Console.WriteLine("child"); }
 
-// 3) consoldan daxil edilen reqemin 100 den boyuk beraber boyukl mesaji kicikdirse kicik mesaji cixsin
+//// 5) konsoldan daxil edilen ededin menfi mujsbet olmasinin yoxlanmasi
+//int importedNumber = Convert.ToInt32(Console.ReadLine());
+//if (importedNumber > 0)
+//{
+//    Console.WriteLine("musbet");
+//}
+//else if (importedNumber < 0)
+//{
+//    Console.WriteLine("menfi");
+//}
+//else
+//{
+//    Console.WriteLine("0 ne menfi ne musbetdir");
+//}
 
-if (Convert.ToInt32(Console.ReadLine()) >= 100)
-{
-    Console.WriteLine("boyuk");
-}
-else { Console.WriteLine("kicik"); }
+//// 6) heftenin gunleri
+//Console.WriteLine("Import the number of the week whose name you want to learn:");
+//int importedWeekDay = Convert.ToInt32(Console.ReadLine());
+//switch (importedWeekDay)
+//{
+//    case 1:
+//        Console.WriteLine("Monday");
+//        break;
+//    case 2:
+//        Console.WriteLine("Tuesday");
+//        break;
+//    case 3:
+//        Console.WriteLine("Wednesday");
+//        break;
+//    case 4:
+//        Console.WriteLine("Thrusday");
+//        break;
+//    case 5:
+//        Console.WriteLine("Friday");
+//        break;
+//    case 6:
+//        Console.WriteLine("Saturday");
+//        break;
+//    case 7:
+//        Console.WriteLine("Sunday");
+//        break;
+//    default:
+//        Console.WriteLine("Wrong week day number imported");
+//        break;
+//}
+//;
 
-// 4) konsoldan daxil edilen yasin 18 den boyuk adult kicikdirse child yazan alqoritm
+//// 7) daxil edilen ededin kubunu hesablayan alqoritm 
+//Console.WriteLine("kubunu oyrenmek istediyiniz ededi daxil edin:");
+//int numberFromUser = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("daxil etdiyiniz ededin kubu: " + numberFromUser * numberFromUser * numberFromUser);
 
-int age = Convert.ToInt32(Console.ReadLine());
-if (age >= 18)
-{
-    Console.WriteLine("Adult");
-}
-else { Console.WriteLine("child"); }
+//// 8) aylarin gunlerini cixaran alqoritim
+//Console.WriteLine("Ayin gun sayini gormek ucun sira nomresini daxil et:");
+//int importedMonth = Convert.ToInt32(Console.ReadLine());
+//switch (importedMonth)
+//{
+//    case 1:
+//        Console.WriteLine("Yanvar: 31 gun");
+//        break;
+//    case 2:
+//        Console.WriteLine("Fevral: 28-29 gun");
+//        break;
+//    case 3:
+//        Console.WriteLine("Mart: 31 gun");
+//        break;
+//    case 4:
+//        Console.WriteLine("Aprel: 30 gun");
+//        break;
+//    case 5:
+//        Console.WriteLine("May: 31 gun");
+//        break;
+//    case 6:
+//        Console.WriteLine("Iyun: 30 gun");
+//        break;
+//    case 7:
+//        Console.WriteLine("Iyul: 31 gun");
+//        break;
+//    case 8:
+//        Console.WriteLine("Avqust: 31 gun");
+//        break;
+//    case 9:
+//        Console.WriteLine("Sentyabr: 30 gun");
+//        break;
+//    case 10:
+//        Console.WriteLine("Oktyabr: 31 gun");
+//        break;
+//    case 11:
+//        Console.WriteLine("Noyabr: 30 gun");
+//        break;
+//    case 12:
+//        Console.WriteLine("Dekabr: 31 gun");
+//        break;
+//    default:
+//        Console.WriteLine("Bele bir ay yoxdur!");
+//        break;
+//}
+//;
 
-// 5) konsoldan daxil edilen ededin menfi mujsbet olmasinin yoxlanmasi
-int importedNumber = Convert.ToInt32(Console.ReadLine());
-if (importedNumber > 0)
-{
-    Console.WriteLine("musbet");
-}
-else if (importedNumber < 0)
-{
-    Console.WriteLine("menfi");
-}
-else
-{
-    Console.WriteLine("0 ne menfi ne musbetdir");
-}
+//// 9) Fruits arrayi yaradib ona 7 meyve elave etmek
+//string[] fruitsArray = { "Apple", "Pineapple", "Banana", "Pomegranade", "Grape", "Pear", "Water melon" };
 
-// 6) heftenin gunleri
+//// 10) students ve 10 student adi
+//string[] studentsArray = { "James", "Michael", "Christopher", "Matthew", "Joshua", "Daniel", "Anthony", "William", "David", "Alexander" };
 
-Console.WriteLine("Import the number of the week whose name you want to learn:");
-int importedWeekDay = Convert.ToInt32(Console.ReadLine());
-switch (importedWeekDay)
-{
-    case 1:
-        Console.WriteLine("Monday");
-        break;
-    case 2:
-        Console.WriteLine("Tuesday");
-        break;
-    case 3:
-        Console.WriteLine("Wednesday");
-        break;
-    case 4:
-        Console.WriteLine("Thrusday");
-        break;
-    case 5:
-        Console.WriteLine("Friday");
-        break;
-    case 6:
-        Console.WriteLine("Saturday");
-        break;
-    case 7:
-        Console.WriteLine("Sunday");
-        break;
-    default:
-        Console.WriteLine("Wrong week day number imported");
-        break;
-}
-;
+//// 11) studentlerin adin cap etmek
+//for (int i=0;  i<studentsArray.Length; i++)
+//{
+//    Console.WriteLine(studentsArray[i]);
+//}
 
-// 7) daxil edilen ededin kubunu hesablayan alqoritm 
+//// 12) studentlerin 5 cisini
+//Console.WriteLine(studentsArray[4]);
 
-Console.WriteLine("kubunu oyrenmek istediyiniz ededi daxil edin:");
-int numberFromUser = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("daxil etdiyiniz ededin kubu: " + numberFromUser * numberFromUser * numberFromUser);
+//// 13) seherler arrayi
+//string[] cities = { "Baku", "Ganja", "Sumqayit", "Mingachevir", "Lankaran", "Shaki", "Shirvan", "Nakhchivan", "Quba", "Shamakhi" };
 
-// 8) aylarin gunlerini cixaran alqoritim
+//// 14) 3e bolunen ededolerin cixsarilmasi
+//int[] numbers = { 20, 34, 21, 98, 45, 12, 34, 65, 11, 34, 54, 30 };
+//for (int  i = 0;  i < numbers.Length;  i++)
+//{
+//    if (numbers[i] % 3 == 0)
+//    {
+//        Console.WriteLine(numbers[i]);
+//    }
+//}
 
-Console.WriteLine("Ayin gun sayini gormek ucun sira nomresini daxil et:");
-int importedMonth = Convert.ToInt32(Console.ReadLine());
-switch (importedMonth)
-{
-    case 1:
-        Console.WriteLine("Yanvar: 31 gun");
-        break;
-    case 2:
-        Console.WriteLine("Fevral: 28-29 gun");
-        break;
-    case 3:
-        Console.WriteLine("Mart: 31 gun");
-        break;
-    case 4:
-        Console.WriteLine("Aprel: 30 gun");
-        break;
-    case 5:
-        Console.WriteLine("May: 31 gun");
-        break;
-    case 6:
-        Console.WriteLine("Iyun: 30 gun");
-        break;
-    case 7:
-        Console.WriteLine("Iyul: 31 gun");
-        break;
-    case 8:
-        Console.WriteLine("Avqust: 31 gun");
-        break;
-    case 9:
-        Console.WriteLine("Sentyabr: 30 gun");
-        break;
-    case 10:
-        Console.WriteLine("Oktyabr: 31 gun");
-        break;
-    case 11:
-        Console.WriteLine("Noyabr: 30 gun");
-        break;
-    case 12:
-        Console.WriteLine("Dekabr: 31 gun");
-        break;
-    default:
-        Console.WriteLine("Bele bir ay yoxdur!");
-        break;
-}
-;
+//// 15) yuxardaki arrayin ,minimumu maksimumu ve ededi ortasini tapilmasi alqoritmi
+//Console.WriteLine(numbers.Min());
+//Console.WriteLine(numbers.Max());
+//Console.WriteLine(numbers.Sum() / numbers.Length);
 
-// 9) Fruits arrayi yaradib ona 7 meyve elave etmek
+// armstrong tapilmasi
+//int num = Convert.ToInt32(Console.ReadLine());
+//int temp = num;
+//double a = 0;
+//double b = 0;
+//while (temp > 0)
+//{
+//    b = temp % 10; 
+//    a = a + Math.Pow(b, 3); 
+//    temp = temp / 10; 
+//}
+//if (a == num)
+//{
+//    Console.WriteLine("Armstrong ededdir");
+//}
+//else{
+//    Console.WriteLine("Armstrong deyil");
+//}
+//int sum = 0;
+//string number = Console.ReadLine();
+//for (int i = 0; i<number.Length; i++)
+//{
+//    char a = number[i];
+//    int x = a- '1';
 
-string[] fruitsArray = { "Apple", "Pineapple", "Banana", "Pomegranade", "Grape", "Pear", "Water melon" };
+//    Console.WriteLine(x);
+//}
 
-// 10) students ve 10 student adi
+// 1 den 500 e qeder ededlerin icerisinde tek ededlerin cemi ile cut ededlerin ceminin ferqini tapib cavabin musbet yada menfi olduqunu tapacaqiq
+//int a = 1;
+//int cut = 0;
+//int tek = 0;
+//while (a <= 500)
+//{
+//    if (a % 2 == 0)
+//    {
+//        cut += a;
+//    }
+//    else { tek += a; }
+//    a++;
+//}
+//if (tek - cut > 0)
+//{
+//    Console.WriteLine(tek-cut + " musbet");
+//} else if (tek - cut < 0)
+//{
+//    Console.WriteLine(tek-cut + " menfi");
+//}
+//else
+//{
+//    Console.WriteLine(0);
+//}
 
-string[] studentsArray = { "James", "Michael", "Christopher", "Matthew", "Joshua", "Daniel", "Anthony", "William", "David", "Alexander" };
 
-// 11) studentlerin adin cap etmek
+// ilk 10 fibanocci ededlweini yazan alqoritim
+//int f = 0;
+//int s = 1;
+//int[] fib = new int[10];
+//for (int i = 0; i < 10; i++)
+//{
+//    fib[i] = f;
+//    int c = f + s;
+//    f = s;
+//    s = c;
+//}
+//for (int i = 0; i < fib.Length; i++)
+//{
+//    Console.Write(fib[i] + " ");
+//}
 
-for (int i=0;  i<studentsArray.Length; i++)
-{
-    Console.WriteLine(studentsArray[i]);
-}
 
-// 12) studentlerin 5 cisini
+//faktoriyal hesablayan
+//int number = Convert.ToInt32(Console.ReadLine());
+//int a = 1;
+//for (int i = 1; i <= number; i++)
+//{
+//    a = a * i;
+//}
+//Console.WriteLine(a);
 
-Console.WriteLine(studentsArray[4]);
 
-// 13) seherler arrayi
-
-string[] cities = { "Baku", "Ganja", "Sumqayit", "Mingachevir", "Lankaran", "Shaki", "Shirvan", "Nakhchivan", "Quba", "Shamakhi" };
-
-// 14) 3e bolunen ededolerin cixsarilmasi
-
-int[] numbers = { 20, 34, 21, 98, 45, 12, 34, 65, 11, 34, 54, 30 };
-for (int  i = 0;  i < numbers.Length;  i++)
-{
-    if (numbers[i] % 3 == 0)
-    {
-        Console.WriteLine(numbers[i]);
-    }
-}
-
-// 15) yuxardaki arrayin ,minimumu maksimumu ve ededi ortasini tapilmasi alqoritmi
-
-Console.WriteLine(numbers.Min());
-Console.WriteLine(numbers.Max());
-Console.WriteLine(numbers.Sum() / numbers.Length);
+// adlari tersine
+//string word = Console.ReadLine();
+//string reverseWord = "";
+//for  (int i = word.Length-1 ; i>=0; i--)
+//{
+//    reverseWord += word[i];
+//}
+//Console.WriteLine(reverseWord);
