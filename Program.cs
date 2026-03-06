@@ -269,7 +269,7 @@
 
 
 //16  ededin ancaq 1e ve ozune bolunub bolunmediyini yoxlayan alqoritim
-
+//int number = Convert.ToInt32(Console.ReadLine());
 
 
 //17 arrayda 6 ya bolunnenneri ekrana cixarsin
@@ -417,4 +417,100 @@
 //}
 
 //24 real palindron
-int input = Convert.ToInt32(Console.ReadLine());
+//int input = Convert.ToInt32(Console.ReadLine());
+
+// fruits alma 2.5azn armud 3azn heyva 4.5 azn kivi 6azn, ilk ad sonra kilo
+//Console.WriteLine("almaq istediyiniz veyveni secin: 1) Alma 2)Armud 3)Heyva 4)Kivi");
+//string fruit = Console.ReadLine();
+//Console.WriteLine("Neche kiloqram?");
+//double weight = Convert.ToDouble(Console.ReadLine());
+//switch (fruit)
+//{
+//    case "1":
+//        Console.WriteLine($"{weight}Kq Alma Qiymet: " + 2.5 * weight + "azn");
+//        break;
+//    case "2":
+//        Console.WriteLine($"{weight}Kq Armud Qiymet: " + 3 * weight + "azn");
+//        break;
+//    case "3":
+//        Console.WriteLine($"{weight}Kq Heyva Qiymet: " + 4.5 * weight + "azn");
+//        break;
+//    case "4":
+//        Console.WriteLine($"{weight}Kq Kivi Qiymet: " + 6 * weight + "azn");
+//        break;
+//    default:
+//        Console.WriteLine("Duzgun meyveni sechin");
+//        break;
+//}
+
+// verilmis n ededinin 2 nin quvveti olub olmamasini yoxlayin
+//Console.WriteLine("insert number");
+//double num = Convert.ToDouble(Console.ReadLine());
+//double test = num;
+//while (test > 0)
+//{
+//    test /= 2;
+//    if (test == 1)
+//    {
+//        break;
+//    }
+//}
+//if (test == 1)
+//{
+//    Console.WriteLine(num + " 2nin quvvetidir");
+//}
+//else
+//{
+//    Console.WriteLine(num+ " 2nin quvveti deyil");
+//}
+
+// pensiya 300azn, 1- balans goster, 2- balansa deposit, 3- balansdan withdraw, 4- exit
+//Console.BackgroundColor = ConsoleColor.White;
+//Console.Clear();
+//double balance = 300;
+//while (true)
+//{
+//    Console.ForegroundColor = ConsoleColor.Black;
+//    double deposit = 0;
+//    double withdraw = 0;
+//    Console.WriteLine("select process: 1-show balance, 2-deposit, 3-withdrawal, 4-exit");
+//    int selectedProcess = Convert.ToInt32(Console.ReadLine());
+//    switch (selectedProcess)
+//    {
+//        case 1:
+//            Console.WriteLine("Your current Balance: " + balance + " Azn");
+//            break;
+//        case 2:
+//            Console.WriteLine("Enter amount of deposit: ");
+//            deposit = Convert.ToDouble(Console.ReadLine());
+//            balance += deposit;
+//            Console.WriteLine($"+{deposit} Azn, Your current balance: " + balance + " Azn");
+//            break;
+//        case 3:
+//            Console.WriteLine("Enter amount of withdraw: ");
+//            withdraw = Convert.ToDouble(Console.ReadLine());
+//            if (withdraw > balance)
+//            {
+//                Console.ForegroundColor = ConsoleColor.Red;
+//                Console.WriteLine("You don't have enough balance.");
+//                break;
+//            }
+//            else
+//            {
+//                balance -= withdraw;
+//                Console.WriteLine($"-{withdraw} Azn, Your current balance: " + balance + " Azn");
+//                break;
+//            }
+//        case 4:
+//            Console.WriteLine("GoodBye");
+//            Environment.Exit(0);
+
+//            break;
+//        default:
+//            Console.ForegroundColor = ConsoleColor.Red;
+//            Console.WriteLine("Please select correct process");
+//            break;
+//    }
+//}
+
+
